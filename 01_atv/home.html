@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <title>Delícias Culinárias</title>
         <meta charset="utf-8" />
@@ -16,7 +15,7 @@
         <!--IMPORTANDO FONTE DO GOOGLE FONTS-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
         <!--IMPORTANDO OS ICONES DO SITE FONT AWESOME-->
         <script src="https://kit.fontawesome.com/d77fc751d9.js" crossorigin="anonymous" defer></script>
     </head>
@@ -47,20 +46,77 @@
                         sua próxima aventura na cozinha.
                     </p>
                 </article>
-                <aside>
-                    <!--Foto do brigadeirão + descrição + link para a receitas-->
-                    <img src="./imagens/foto-brigadeirao.jpg" alt="Foto Brigadeirão">
-                    <h3>Brigadeirão</h3>
+                <article>
+                    <img src="./imagens/salgadoxdoce.jpg" alt="Coxinha vs. Brigadeiro">
                     <p>
-                        Aprenda a fazer o brigadeirão perfeito em minutos! 
-                        Essa receita irresistível combina a cremosidade do 
-                        brigadeiro com a textura suave de um pudim. Com ingredientes 
-                        simples como leite condensado, chocolate em pó e ovos, você terá uma 
-                        sobremesa incrível para surpreender seus convidados.
+                        Quando se trata de comida, há dois campos que conquistam 
+                        corações e papilas gustativas: o Salgado, reino dos petiscos 
+                        salgados e suculentos, e o Doce, onde o açúcar reina soberano, 
+                        criando sobremesas incrivelmente tentadoras. Afinal, quem pode 
+                        resistir ao aroma tentador de uma coxinha quentinha ou à doçura 
+                        celestial de um brigadeiro?
+
+                        Mas agora nós queremos saber: Salgado ou Doce? 
+                        Pizza ou Brownie? Lasanha ou Sorvete? Deixe seu voto 
+                        e descubra qual sabor reina supremo entre os amantes da culinária!
                     </p>
-                    <a href="receita_brigadeirao.html">Confira a receita.</a>
-                </aside>
+                    <form>
+                        <input type="radio" id="salgado" name="voto_enquete" value="salgado">
+                        <label for="salgado">Salgado</label><br>
+                        <input type="radio" id="doce" name="voto_enquete" value="doce">
+                        <label for="doce">Doce</label><br>
+                        <input type="button" value="Votar">
+                    </form>
+                </article>
+                <article>
+                    <h3>Gostou do nosso site?</h3>
+                    <p>Faça seu cadastro preenchendo o formulário abaixo.</p>
+                    <form action="https://www.w3schools.com/action_page.php">
+                        <label>Nome Completo</label><br/>
+                        <input type="text" id="nome_user" maxlength="15" minlength="8"><br/>
+                        <label>Email</label><br/>
+                        <input type="email" name="email" id="email_usr"><br/>
+                        <label>País</label><br/>
+                        <input type="text" id="" value="Brasil" readonly><br/>
+                        <label>Dê uma nota entre 1 e 10 para o nosso site:</label><br/>
+                        <input type="number" id="nota_site" min="1" max="10"><br/>
+                        <!--Caixa de Seleção-->
+                        <label>Quais receitas você gosta de ver por aqui?</label><br/>
+                        <input type="checkbox" id="receitas" name="cat_receitas" value="Doces">
+                        <label>Doces</label><br/>
+                        <input type="checkbox" id="receitas" name="cat_receitas" value="Bolos">
+                        <label>Bolos</label><br/>
+                        <input type="checkbox" id="receitas" name="cat_receitas" value="Carnes">
+                        <label>Carnes</label><br/>
+                        <input type="checkbox" id="receitas" name="cat_receitas" value="Fitness">
+                        <label>Fitness</label><br/>
+                        <input type="checkbox" id="receitas" name="cat_receitas" value="Natal">
+                        <label>Receitas de Natal</label><br/>
+                        <!--Termos de aceitação-->
+                        <label>Você deseja receber atualizações pelo email cadastrado?</label><br/>
+                        <input type="radio" name="termo_cadastro" id="cadastro" value="sim">
+                        <label>Sim</label><br/>
+                        <input type="radio" name="termo_cadastro" id="cadastro" value="não">
+                        <label>Não</label><br/>
+                        <!--Submit-->
+                        <input type="submit" value="Enviar">
+                    </form>
+                </article>
+                
             </section>
+            <aside>
+                <!--Foto do brigadeirão + descrição + link para a receitas-->
+                <img src="./imagens/foto-brigadeirao.jpg" alt="Foto Brigadeirão">
+                <h3>Brigadeirão</h3>
+                <p>
+                    Aprenda a fazer o brigadeirão perfeito em minutos! 
+                    Essa receita irresistível combina a cremosidade do 
+                    brigadeiro com a textura suave de um pudim. Com ingredientes 
+                    simples como leite condensado, chocolate em pó e ovos, você terá uma 
+                    sobremesa incrível para surpreender seus convidados.
+                </p>
+                <a href="receita_brigadeirao.html">Confira a receita.</a>
+            </aside>
         </main>
 
         <footer>

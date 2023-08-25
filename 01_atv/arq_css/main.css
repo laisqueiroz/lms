@@ -10,28 +10,36 @@ main{
 }
 
 main .main-content{
-    display: flex;
-    align-items: center;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
     justify-content:space-between;
     color: #47141e;
+}
+
+main .main-content article img{
+    width: 60%;
 }
 
 main section article{
     padding: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction:column;
+    justify-content:center;
 }
 
-main section aside{
+main section article form button{
+    padding: 10px;
+    margin: 10px;
+}
+
+main aside{
     margin-right: 5.3em;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items:end;
     justify-content: center;
-
 }
 
 main section aside img{
