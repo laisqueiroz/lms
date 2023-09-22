@@ -1,0 +1,93 @@
+main{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#principal {
+    margin-right: 20px;
+    padding: 20px;
+}
+
+#menuDireito{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+}
+
+#menuDireito p, h3{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#menuDireito img{
+    width: 300px;
+    height: auto;
+
+    border-radius: 150px;
+}
+
+#apresentacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+}
+
+#contact i{
+    font-size: 10px;
+}
+
+.galeria-item img{
+    position: relative;
+    width: 150px;
+    padding: 2px;
+}
+
+.galeria-item {
+    position: relative;
+    margin: 5px;
+    padding: 5px;
+}
+
+.galeria {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 10px;
+}
+
+#menuEsquerdo{
+    width: 300px;
+}
+
+#menuEsquerdo a{
+    display: block;
+    padding: 10px 0;
+}
+
+#menuDireito{
+    flex: 1;
+}
+
+.container{
+    display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 60px; /* Altura do navegador superior móvel */
+            padding: 20px;
+}
+

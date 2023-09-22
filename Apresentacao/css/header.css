@@ -1,0 +1,73 @@
+header{
+    background-color: #90572d;
+    margin: 0;
+    padding: 0;
+
+    height: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+button {
+    background-color: #90572d;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0px 10px 0px 10px;
+    color: white;
+
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    padding: 20px;
+    pointer-events: stroke;
+
+    background-color: #f2acb6;
+    color: black;
+    
+}
+
+.dropdown-content > button:hover{
+  padding: 10px;
+}
+
+
+
+header a {
+  background-color: #90572d;
+  margin: 10px;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+
+  transition: 0.2s ease-in-out;
+}
+
+
+a:hover{
+  pointer-events: stroke;
+  padding: 20px;
+  background-color: #f2acb6;
+  color: black;
+  
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
