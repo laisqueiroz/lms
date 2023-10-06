@@ -1,0 +1,57 @@
+main{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menulateral{
+    background-color: bisque;
+    height: 1200px;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+
+    align-items: center;
+}
+
+.conteudoprincipal{
+    width: 80vw;
+    height: 1200px;
+}
+
+.linksmenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+
+    align-items: center;
+}
+
+.loader {
+    /*definindo altura, largura e estilo de bordar e cor*/
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color:#90572d;
+    border-radius: 50%;
+    box-sizing: border-box;
+    /*definindo posição do elemento*/
+    display: inline-block;
+    /*definindo o tipo de animação no cao será rotação de 1s e infinito*/
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    /*Na posição 0 ele não sofre alteração*/
+    0% {
+        transform: rotate(0deg);
+    }
+    /*Na posição 100 ele deve faer um giro de 360 graus, como foi definido na 
+    animação que será uma rotação de 1s, ele irá fazer esse percurso de forma suave, dando a impressão
+    de que está carregando*/
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
